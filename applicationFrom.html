@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Application Form </title>
+ </head>
+ <body>
+	<h2>INDIAN INSTITUTE OF TECHNOLOGY DELHI</h2>
+	<h3>Application Form For Admission to Ph.D Programme</h3>
+		<form action="/applicatonfrom">
+			<!-- CATEGORY-->
+			<fieldset>
+			<legend><h4>CATEGORY</h4></legend>
+			<fieldset>
+				<legend><strong>Source of AssistentShip</strong></legend>
+					<div>
+						<label for="inst"> Institute</label>
+							<input type="text" name="institute" id="inst">
+					</div><br>
+					<div>
+						<label for="year"> Year</label>
+							<input type="number" min="1900" max="2099" name="year" id="year">
+					</div><br>
+					<div>
+						<label for="score"> GATE Score</label>
+							<input type="number" min="0" max="1000" name="gatescore" id="score">
+					</div><br>
+					<div>
+						<label for="marks"> GATE Marks</label>
+							<input type="number" max="100" name="gatemarks" id="marks">
+					</div><br>
+		
+					<div>
+						<input type="checkbox" name="csir" id="csir">
+							<label for="csir"> CSIR</label><br>
+						<input type="checkbox" name="ugcnet" id="ugcnet">
+							<label for="ugcnet"> UGC NET</label><br>
+						<input type="checkbox" name="ugcjrf" id="ugcjrf">
+							<label for="ugcjrf"> UGC JRF</label><br>
+					</div>
+			</fieldset><br>
+					<fieldset>
+						<legend><strong>Employed Candidates(No assistantShip)</strong></legend>
+							<div>
+									<input type="checkbox" name="fulltime" id="fulltime">
+									<label for="fulltime">Sponsered(Full time)</label> 
+									<label for="expyrs">&nbsp;&nbsp;&nbsp;Experience Years</label>
+							        <input type="number" min="0" max="10" name="expyrs" id="expyrs">
+							</div><br>
+							<div>
+									<input type="checkbox" name="parttime" id="parttime">
+									<label for="parttime">Part time</label>
+									<label for="partexpyrs">&nbsp;&nbsp;&nbsp;Experience Years</label>
+							        <input type="number" min="0" max="10" name="partexpyrs" id="partexpyrs">
+							</div>
+					</fieldset><br>
+					<div> 
+						Caste :
+						<input type="radio" name="caste">GENERAL
+						<input type="radio" name="caste">OBC
+					    <input type="radio" name="caste">SC
+						<input type="radio" name="caste">ST
+						<input type="radio" name="caste">PH
+					</div>
+			</fieldset>
+			<br><br>
+
+			<!--CHOICE-->
+			<fieldset>
+				<legend><h4>CHOICE</h4></legend>
+				<div>
+					<label for="dept"> Department/Centre</label>
+						<input type="text" name="dept" id="dept">
+				</div><br>
+				<div>
+					<label for="phdcode"> Ph.D. Code</label>
+						<input type="number" name="phdcode" id="phdcode">
+				</div><br>
+				<div>
+					<label for="rescreacharea"> Proposed are of research:</label><br>
+					<textarea name="rescreacharea" cols="40" rows="10">
+					</textarea>
+				</div>
+			</fieldset><br><br>
+		
+
+		<!--PERSONAL-->
+		<fieldset>
+			<legend><h4>PERSONAL</h4></legend>
+				<div>
+					<label for="name"> Name</label>
+						<input type="text" name="name" id="name">
+				</div><br>
+				<div> 
+					Gender:
+					Male<input type="radio" name="gender">
+					Female<input type="radio" name="gender">
+				</div><br>
+				<div>
+					<label for="dob">Date of Birth</label>
+						<input type="date" name="dob" id="dob">
+				</div><br>
+				<div>
+					<label for="fname"> Father's Name</label>
+						<input type="text" name="fname" id="fname">
+				</div><br>
+				<div>
+					<label for="mname"> Mother's Name</label>
+						<input type="text" name="mname" id="mname">
+				</div><br>
+				<fieldset>
+					<legend><strong>Address for Corresspondence</strong></legend>
+						<textarea name="address" cols="40" rows="10">
+					</textarea>
+					<div>
+					<label for="pin"> PIN</label>
+						<input type="number" name="pin" maxlength="6" id="pin">
+					</div><br>
+					<div>
+					<label for="tel"> Telephone Number</label>
+						<input type="tel" name="tel" id="tel">
+					</div><br>
+					<div>
+					<label for="email1"> Email</label>
+						<input type="email" name="email1" id="email1">
+					</div><br>
+					<div>
+					<label for="phno"> Phone Number</label>
+						<input type="tel" name="phno" id="phno">
+					</div><br>
+				</fieldset><br>
+				<fieldset>
+					<legend><strong>Permanent Address </strong></legend>
+						<textarea name="peraddress" cols="40" rows="10">
+					</textarea>
+					<div>
+					<label for="perpin"> PIN</label>
+						<input type="number" name="perpin" maxlength="6" id="perpin">
+					</div><br>
+					<div>
+					<label for="pertel"> Telephone Number</label>
+						<input type="tel" name="pertel" id="pertel">
+					</div><br>
+					<div>
+					<label for="email2"> Email</label>
+						<input type="email" name="email2" id="email2">
+					</div><br>
+					<div>
+					<label for="phno2"> Phone Number</label>
+						<input type="tel" name="phno2" id="phno2">
+					</div><br>
+				</fieldset>
+		</fieldset>
+				
+		<!--QUALIFYING DEGREE-->
+		<fieldset>
+			<legend><h4> QUALIFYING DEGREE</h4></legend>
+			<div>
+				<label for="qeaxm"> Qualifying Exam</label>
+					<input type="text" name="qexam" id="qexam">
+			</div><br>
+			<div>
+				<label for="duryears"> Duration of the cource(Years)</label>
+					<input type="number" name="duryears" id="duryears">
+			</div><br>
+			<div>
+				<label for="discipline"> Discipline</label>
+					<input type="text" name="discipline" id="discipline">
+			</div><br>
+			<div>
+				<label for="passedyear"> Year of passing</label>
+					<input type="number" min="1900" max="2099" name="passedyear" id="passedyear">
+			</div><br>
+			<div>
+				<label for="instname"> Name of University/Institute</label>
+					<input type="text" name="instname" id="instname">
+			</div><br>
+			
+			<caption><strong>CGPA/Marks Obtained</strong></caption>
+			<table>
+				<thead>
+					<tr>
+						<th>Year and semester</th>
+						<th>Marks Obtained</th>
+						<th>Max. Marks</th>
+					<tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><strong>Year 1 Semester 1</strong></td>
+						<td> <input type="number" min="0" max="100" name="y1s1marks"></td>
+						<td> <input type="number" min="0" max="100" name="y1s1maxmarks"></td>
+					</tr>
+					<tr>
+						<td><strong>Year 1 Semester 2</strong></td>
+						<td> <input type="number" min="0" max="100" name="y1s2marks"></td>
+						<td> <input type="number" min="0" max="100" name="y1s2maxmarks"></td>
+					</tr>
+					<tr>
+						<td><strong>Year 2 Semester 3</strong></td>
+						<td> <input type="number" min="0" max="100" name="y2s3marks"></td>
+						<td> <input type="number" min="0" max="100" name="y2s3maxmarks"></td>
+					</tr>
+					<tr>
+						<td><strong>Year 2 Semester 4</strong></td>
+						<td> <input type="number" min="0" max="100" name="y2s4marks"></td>
+						<td> <input type="number" min="0" max="100" name="y2s4maxmarks"></td>
+					</tr>
+					<tr>
+						<td><strong>Year 3 Semester 5</strong></td>
+						<td> <input type="number" min="0" max="100" name="y3s5marks"></td>
+						<td> <input type="number" min="0" max="100" name="y3s5maxmarks"></td>
+					</tr>
+					<tr>
+						<td><strong>Year 3 Semester 6</strong></td>
+						<td> <input type="number" min="0" max="100" name="y3s6marks"></td>
+						<td> <input type="number" min="0" max="100" name="y3s6maxmarks"></td>
+					</tr>
+					<tr>
+						<td><strong>Year 4 Semester 7</strong></td>
+						<td> <input type="number" min="0" max="100" name="y4s7marks"></td>
+						<td> <input type="number" min="0" max="100" name="y4s7maxmarks"></td>
+					</tr>
+					<tr>
+						<td><strong>Year 4 Semester 8</strong></td>
+						<td> <input type="number" min="0" max="100" name="y4s8marks"></td>
+						<td> <input type="number" min="0" max="100" name="y4s8maxmarks"></td>
+					</tr>
+				</tbody>
+			</table>
+			<br>
+			<div>
+				<label for="cgpa"> CGPA</label>
+					<input type="number" name="cgpa" id="cgpa">
+			</div><br>
+			<div>
+				<label for="totalcgpa"> Secured out of</label>
+					<input type="number" name="totalcgpa" id="totalcgpa">
+			</div>
+			<p><strong>OR</strong></p>
+			<div>
+				<label for="percentage"> Aggregate % of marks</label>
+					<input type="number" min="0" max="100" name="percentage" id="percentage">
+			</div><br>
+		</fieldset><br><br>
+		
+
+		<!--Previous Academy Records-->
+		<fieldset>
+		<p>Details of marks secured in the Examination other than qualifying examinations</p>
+		
+			<legend><h3>Previous Academy Records</h3></legend>
+			<table>
+			<thead>
+				<tr>
+					<th><strong>Exam/Degree</strong></th>
+					<th><strong>Discipline</strong></th>
+					<th><strong>Institute/University</strong></th>
+					<th><strong>Year of passing</strong></th>
+					<th><strong>%Marks/cgpa</strong></th>
+					<th><strong>Rank in Class/University</strong></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><strong>10+2/Equivalent</strong></td>
+					<td><input type="text" name="dsci12"></td>
+					<td><input type="text" name="inst12"></td>
+					<td><input type="number" min="1900" max="2099" name="passedyear12"></td>
+					<td><input type="number" min="0" max="100" name="cgpa12"></td>
+					<td><input type="number" name="rank12"></td>
+				</tr>
+				<tr>
+					<td><strong>B.Sc/BA</strong></td>
+					<td><input type="text" name="dscibsc"></td>
+					<td><input type="text" name="instbsc"></td>
+					<td><input type="number" min="1900" max="2099" name="passedyearbsc"></td>
+					<td><input type="number" min="0" max="100" name="cgpabsc"></td>
+					<td><input type="number" name="rankbsc"></td>
+				</tr>
+				<tr>
+					<td><strong>M.Sc/B.Tech</strong></td>
+					<td><input type="text" name="dscimscbtech"></td>
+					<td><input type="text" name="instmscbtech"></td>
+					<td><input type="number" min="1900" max="2099" name="passedyearmscbtech"></td>
+					<td><input type="number" min="0" max="100" name="cgpamscbtech"></td>
+					<td><input type="number" name="rankmscbtech"></td>
+				</tr>
+				<tr>
+					<td><strong>MA</strong></td>
+					<td><input type="text" name="dscima"></td>
+					<td><input type="text" name="instma"></td>
+					<td><input type="number" min="1900" max="2099" name="passedyearma"></td>
+					<td><input type="number" min="0" max="100" name="cgpama"></td>
+					<td><input type="number" name="rankma"></td>
+				</tr>
+				<tr>
+					<td><strong>Any Other</strong></td>
+					<td><input type="text" name="dsciao"></td>
+					<td><input type="text" name="instao"></td>
+					<td><input type="number" min="1900" max="2099" name="passedyearao"></td>
+					<td><input type="number" min="0" max="100" name="cgpaao"></td>
+					<td><input type="number" name="rankao"></td>
+				</tr>
+			</tbody>
+			</table>
+		</fieldset>
+
+		<!--Upload photo-->
+		<h4><strong>Upload your recent photograph</strong></h4>
+		<label for="img"><strong>Select image:</strong></label>
+			<input type="file" id="img" name="img" accept="image/*"><br><br>
+		<!--Buttons-->
+		<div>
+			<input type="submit" value="Submit Form" name="submit">
+		</div><br>
+		<div>
+			<input type="reset" value="Reset Form" name="reset">
+		</div><br>
+		<div>
+			<button type="cancel" value="Cancel" name="cancel"> Cancel </button>
+		</div>
+		</form>
+ </body>
+</html>
